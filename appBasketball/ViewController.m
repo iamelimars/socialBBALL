@@ -33,7 +33,7 @@
     
     FIRUser *user = [FIRAuth auth].currentUser;
     if (user) {
-        [self signedIn:user];
+        //[self signedIn:user];
     }
     
 }

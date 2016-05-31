@@ -20,6 +20,7 @@
 		883DE32E1CFE460700777ED8 /* MeasurementHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 883DE32D1CFE460700777ED8 /* MeasurementHelper.m */; };
 		883DE3311CFE462400777ED8 /* AppState.m in Sources */ = {isa = PBXBuildFile; fileRef = 883DE3301CFE462400777ED8 /* AppState.m */; };
 		883DE3341CFE464600777ED8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 883DE3331CFE464600777ED8 /* Constants.m */; };
+		883DE3371CFE51C200777ED8 /* nextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883DE3361CFE51C200777ED8 /* nextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		883DE3301CFE462400777ED8 /* AppState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppState.m; sourceTree = "<group>"; };
 		883DE3321CFE464600777ED8 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		883DE3331CFE464600777ED8 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		883DE3351CFE51C200777ED8 /* nextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nextViewController.h; sourceTree = "<group>"; };
+		883DE3361CFE51C200777ED8 /* nextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				883DE2BC1CFE1A7900777ED8 /* AppDelegate.m */,
 				883DE2BE1CFE1A7900777ED8 /* ViewController.h */,
 				883DE2BF1CFE1A7900777ED8 /* ViewController.m */,
+				883DE3351CFE51C200777ED8 /* nextViewController.h */,
+				883DE3361CFE51C200777ED8 /* nextViewController.m */,
 				883DE2C11CFE1A7900777ED8 /* Main.storyboard */,
 				883DE2C41CFE1A7900777ED8 /* Assets.xcassets */,
 				883DE2C61CFE1A7A00777ED8 /* LaunchScreen.storyboard */,
@@ -372,6 +377,7 @@
 				883DE3311CFE462400777ED8 /* AppState.m in Sources */,
 				883DE2BD1CFE1A7900777ED8 /* AppDelegate.m in Sources */,
 				883DE2BA1CFE1A7900777ED8 /* main.m in Sources */,
+				883DE3371CFE51C200777ED8 /* nextViewController.m in Sources */,
 				883DE3341CFE464600777ED8 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
