@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
+
+-(IBAction)didTapSignIn:(id)sender;
+-(IBAction)didTapSignUp:(id)sender;
+-(IBAction)didRequestPasswordReset:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *myEmailField;
+@property (weak, nonatomic) IBOutlet UITextField *myPasswordField;
 
 
 @end

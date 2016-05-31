@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>692377000450-9975077v74nane799a4fiafkckctrvbm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.692377000450-9975077v74nane799a4fiafkckctrvbm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB0VWtE_svCuZJSFab_4FCuMygo_Ihwf-I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>692377000450</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.EliMarsh.appBasketball</string>
+	<key>PROJECT_ID</key>
+	<string>jokes-elisha-marshall</string>
+	<key>STORAGE_BUCKET</key>
+	<string>jokes-elisha-marshall.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:692377000450:ios:b0b3a131507fb3df</string>
+	<key>DATABASE_URL</key>
+	<string>https://jokes-elisha-marshall.firebaseio.com</string>
+</dict>
+</plist>
