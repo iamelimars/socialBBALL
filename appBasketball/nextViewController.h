@@ -23,5 +23,6 @@ UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDele
 @property (weak, nonatomic) IBOutlet UIButton *sendButton;
 @property (weak, nonatomic) IBOutlet UITableView *clientTable;
 - (IBAction)didSendMessage:(id)sender;
+- (IBAction)didTapCameraButton:(id)sender;
 
 @end

@@ -82,6 +82,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E97-EL-YYr">
+                                <rect key="frame" x="277" y="443" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97670525312423706" green="0.60546392202377319" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -124,7 +128,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qqc-e4-gcr">
-                                <rect key="frame" x="20" y="74" width="560" height="450"/>
+                                <rect key="frame" x="20" y="74" width="560" height="434"/>
                                 <color key="backgroundColor" red="0.029267286881804466" green="0.011618193238973618" blue="0.0034396825358271599" alpha="0.19404560810810811" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClientCell" id="fqp-z0-JXB">
@@ -151,13 +155,28 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="6C6-Pb-bXr" firstAttribute="trailing" secondItem="Kpr-uM-rAF" secondAttribute="trailingMargin" id="3KT-3D-ckf"/>
-                                    <constraint firstItem="6C6-Pb-bXr" firstAttribute="top" secondItem="Kpr-uM-rAF" secondAttribute="topMargin" id="ElH-vu-ytZ"/>
-                                    <constraint firstAttribute="bottom" secondItem="6C6-Pb-bXr" secondAttribute="bottom" constant="4" id="lGI-bo-5Jn"/>
+                                    <constraint firstItem="6C6-Pb-bXr" firstAttribute="top" secondItem="Kpr-uM-rAF" secondAttribute="topMargin" id="WTN-uk-n86"/>
+                                    <constraint firstAttribute="bottom" secondItem="6C6-Pb-bXr" secondAttribute="bottom" constant="4" id="qns-1e-PUn"/>
+                                    <constraint firstItem="6C6-Pb-bXr" firstAttribute="trailing" secondItem="Kpr-uM-rAF" secondAttribute="trailingMargin" id="tkF-kF-12q"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ON3-97-e60">
+                                <rect key="frame" x="71" y="516" width="459" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sk6-sK-osd">
+                                <rect key="frame" x="20" y="515" width="32" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="NKo-FT-LlJ"/>
+                                </constraints>
+                                <state key="normal" title="Cam"/>
+                                <connections>
+                                    <action selector="didTapCameraButton:" destination="6cN-bd-dnS" eventType="touchUpInside" id="Sux-Sf-iP1"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6m-cO-cWx">
-                                <rect key="frame" x="548" y="532" width="36" height="30"/>
+                                <rect key="frame" x="544" y="516" width="36" height="30"/>
                                 <state key="normal" title="Send">
                                     <color key="titleColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -165,29 +184,35 @@
                                     <action selector="didSendMessage:" destination="6cN-bd-dnS" eventType="touchUpInside" id="TP0-1R-oJr"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ON3-97-e60">
-                                <rect key="frame" x="71" y="532" width="459" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awD-DR-h5y" customClass="GADBannerView">
+                                <rect key="frame" x="241" y="555" width="118" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ON3-97-e60" firstAttribute="top" secondItem="Qqc-e4-gcr" secondAttribute="bottom" constant="8" symbolic="YES" id="0Ce-aC-Y7w"/>
-                            <constraint firstItem="Kpr-uM-rAF" firstAttribute="trailing" secondItem="0cb-AC-OTh" secondAttribute="trailingMargin" id="16W-TN-T5h"/>
-                            <constraint firstItem="SJa-QK-fEw" firstAttribute="top" secondItem="ON3-97-e60" secondAttribute="bottom" constant="38" id="Dtj-BX-gDG"/>
-                            <constraint firstItem="Qqc-e4-gcr" firstAttribute="centerX" secondItem="ON3-97-e60" secondAttribute="centerX" id="OFP-Ln-mQg"/>
-                            <constraint firstItem="Kpr-uM-rAF" firstAttribute="leading" secondItem="Qqc-e4-gcr" secondAttribute="leading" id="Pbe-Vi-EKg"/>
-                            <constraint firstItem="i6m-cO-cWx" firstAttribute="leading" secondItem="ON3-97-e60" secondAttribute="trailing" constant="18" id="RL1-1E-Pzz"/>
-                            <constraint firstItem="Qqc-e4-gcr" firstAttribute="top" secondItem="Kpr-uM-rAF" secondAttribute="bottom" constant="12" id="aXl-CW-6m4"/>
-                            <constraint firstItem="ON3-97-e60" firstAttribute="leading" secondItem="0cb-AC-OTh" secondAttribute="leadingMargin" constant="51" id="eib-bF-rVx"/>
-                            <constraint firstItem="Kpr-uM-rAF" firstAttribute="top" secondItem="STO-KU-cnH" secondAttribute="bottom" id="fhp-q5-RNL"/>
-                            <constraint firstItem="ON3-97-e60" firstAttribute="top" secondItem="i6m-cO-cWx" secondAttribute="top" id="heb-DF-wpy"/>
-                            <constraint firstItem="Kpr-uM-rAF" firstAttribute="leading" secondItem="0cb-AC-OTh" secondAttribute="leadingMargin" id="idB-yP-uO9"/>
-                            <constraint firstItem="Kpr-uM-rAF" firstAttribute="trailing" secondItem="Qqc-e4-gcr" secondAttribute="trailing" id="lb1-kB-Mx3"/>
+                            <constraint firstItem="Kpr-uM-rAF" firstAttribute="leading" secondItem="0cb-AC-OTh" secondAttribute="leadingMargin" id="06R-7u-CCo"/>
+                            <constraint firstItem="SJa-QK-fEw" firstAttribute="top" secondItem="i6m-cO-cWx" secondAttribute="bottom" constant="54" id="0bp-RX-Ae2"/>
+                            <constraint firstItem="Qqc-e4-gcr" firstAttribute="leading" secondItem="Sk6-sK-osd" secondAttribute="leading" id="5Ng-Zc-FsM"/>
+                            <constraint firstItem="Kpr-uM-rAF" firstAttribute="leading" secondItem="Qqc-e4-gcr" secondAttribute="leading" id="IUQ-5b-yZK"/>
+                            <constraint firstItem="Sk6-sK-osd" firstAttribute="baseline" secondItem="ON3-97-e60" secondAttribute="baseline" id="Jdq-4I-5tx"/>
+                            <constraint firstItem="ON3-97-e60" firstAttribute="centerX" secondItem="awD-DR-h5y" secondAttribute="centerX" id="KEz-Ie-5Js"/>
+                            <constraint firstItem="ON3-97-e60" firstAttribute="top" secondItem="Qqc-e4-gcr" secondAttribute="bottom" constant="8" symbolic="YES" id="KNi-sA-dv3"/>
+                            <constraint firstItem="Qqc-e4-gcr" firstAttribute="top" secondItem="Kpr-uM-rAF" secondAttribute="bottom" constant="12" id="PM0-Rx-orJ"/>
+                            <constraint firstItem="Kpr-uM-rAF" firstAttribute="top" secondItem="STO-KU-cnH" secondAttribute="bottom" id="Rlm-oG-oYX"/>
+                            <constraint firstItem="awD-DR-h5y" firstAttribute="top" secondItem="ON3-97-e60" secondAttribute="bottom" constant="9" id="SAv-Cw-jTa"/>
+                            <constraint firstItem="awD-DR-h5y" firstAttribute="leading" secondItem="0cb-AC-OTh" secondAttribute="leading" constant="241" id="Sri-yq-vbf"/>
+                            <constraint firstItem="Kpr-uM-rAF" firstAttribute="trailing" secondItem="0cb-AC-OTh" secondAttribute="trailingMargin" id="TBQ-Yl-xy4"/>
+                            <constraint firstItem="ON3-97-e60" firstAttribute="leading" secondItem="Sk6-sK-osd" secondAttribute="trailing" constant="19" id="Ugj-Mu-gKI"/>
+                            <constraint firstItem="awD-DR-h5y" firstAttribute="bottom" secondItem="SJa-QK-fEw" secondAttribute="top" id="h3u-fv-ulr"/>
+                            <constraint firstItem="Qqc-e4-gcr" firstAttribute="trailing" secondItem="i6m-cO-cWx" secondAttribute="trailing" id="lqi-HJ-gva"/>
+                            <constraint firstItem="Kpr-uM-rAF" firstAttribute="trailing" secondItem="Qqc-e4-gcr" secondAttribute="trailing" id="wAd-jz-5So"/>
+                            <constraint firstItem="ON3-97-e60" firstAttribute="top" secondItem="i6m-cO-cWx" secondAttribute="top" id="x9Z-dD-FaG"/>
+                            <constraint firstItem="Qqc-e4-gcr" firstAttribute="centerX" secondItem="ON3-97-e60" secondAttribute="centerX" id="xod-VL-QhJ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="awD-DR-h5y" id="cKR-Ho-bEg"/>
                         <outlet property="clientTable" destination="Qqc-e4-gcr" id="ObF-Tz-qP7"/>
                         <outlet property="sendButton" destination="i6m-cO-cWx" id="RaH-ks-EE6"/>
                         <outlet property="textField" destination="ON3-97-e60" id="3Fi-Qg-0ps"/>
