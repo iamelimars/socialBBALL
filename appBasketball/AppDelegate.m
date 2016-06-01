@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 @import UIKit;
 @import Firebase;
+@import Mapbox;
 
 @interface AppDelegate ()
 
@@ -20,6 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [FIRApp configure];
+    [MGLAccountManager setAccessToken:@"pk.eyJ1IjoiaWFtZWxpbWFycyIsImEiOiJjaW94NjBneXAwMW0wdHdtOGthc3RxNTNzIn0.46hyj4ooVH1xez6OrXNsPw"];
     return YES;
 }
 
